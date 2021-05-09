@@ -1,0 +1,20 @@
+# Project exclude paths
+/.gradle/
+/HelloWorld/out/
+/Tic-Tac-Toe (1)/task/build/
+/Tic-Tac-Toe (1)/task/out/
+/Tic-Tac-Toe (1)/task/out/production/classes/
+/Unit Converter/Problems/A small version of the Battleship game/out/
+/Unit Converter/Problems/A small version of the Battleship game/out/production/classes/
+/Unit Converter/Problems/Beyond the word/out/
+/Unit Converter/Problems/Beyond the word/out/production/classes/
+/Unit Converter/Problems/First digit/out/
+/Unit Converter/Problems/First digit/out/production/classes/
+/Unit Converter/Problems/Getting letters from the Alphabet/out/
+/Unit Converter/Problems/Getting letters from the Alphabet/out/production/classes/
+/Unit Converter/Problems/Unique characters/out/
+/Unit Converter/Problems/Unique characters/out/production/classes/
+/Unit Converter/Unit Converter/task/build/
+/Unit Converter/Unit Converter/task/out/
+/Unit Converter/Unit Converter/task/out/production/classes/
+/Unit Converter/Unit Converter/task/out/test/classes/
