@@ -1,7 +1,5 @@
 package tictactoe
 
-import kotlin.math.abs
-
 class Board3x3 {
     var cells = arrayOf(
         Cell(0, Mark.BLANK), Cell(1, Mark.BLANK), Cell(2, Mark.BLANK),
@@ -24,7 +22,7 @@ class Board3x3 {
     }
 
     fun getAvailableSpots(): List<Int> {
-        var returns = mutableListOf<Int>()
+        val returns = mutableListOf<Int>()
         for (cell in cells) {
             if (cell.mark.equals(Mark.BLANK)) {
                 returns.add(cell.index)
@@ -49,7 +47,7 @@ class Board3x3 {
     )
 
     companion object {
-        fun convertCordinatesToIndex(x: Int, y: Int): Int {
+        fun convertCoordinatesToIndex(x: Int, y: Int): Int {
             return 3 * (x - 1) + (y - 1)
         }
     }

@@ -25,7 +25,7 @@ class Player(val playerMark: Mark = Mark.X) {
             }
         }
         val (x,y) = values.map { it.toInt() }
-        decidedMove.index = Board3x3.convertCordinatesToIndex(x, y)
+        decidedMove.index = Board3x3.convertCoordinatesToIndex(x, y)
 
         if (!availableSpots.contains(decidedMove.index)) {
             println("This cell is occupied! Choose another one!")
