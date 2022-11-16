@@ -24,7 +24,7 @@ class Board3x3 {
     fun getAvailableSpots(): List<Int> {
         val returns = mutableListOf<Int>()
         for (cell in cells) {
-            if (cell.mark.equals(Mark.BLANK)) {
+            if (cell.mark == Mark.BLANK) {
                 returns.add(cell.index)
             }
         }

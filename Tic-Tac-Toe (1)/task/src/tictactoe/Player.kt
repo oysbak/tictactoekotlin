@@ -1,7 +1,7 @@
 package tictactoe
 
-class Player(val playerMark: Mark = Mark.X) {
-    val decidedMove = PlayerMove(-1, playerMark)
+class Player(playerMark: Mark = Mark.X) {
+    private val decidedMove = PlayerMove(-1, playerMark)
 
     fun requestMove(availableSpots: List<Int>): PlayerMove {
         var isApprovedMove = false

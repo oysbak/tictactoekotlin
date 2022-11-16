@@ -19,11 +19,6 @@ class TicTakToe {
         } while (!isFinished())
     }
 
-    private fun getInput(): String {
-        print("Enter cells: ")
-        return readLine()!!
-    }
-
     private fun analyze() {
         when {
             isImpossible() -> println("Impossible")
@@ -39,18 +34,18 @@ class TicTakToe {
             return true
         }
         for (cell in board.cells) {
-            if (cell.mark.equals(Mark.BLANK)) {
+            if (cell.mark == Mark.BLANK) {
                 return false
             }
         }
         return true
     }
 
-    fun isDraw(): Boolean {
+    private fun isDraw(): Boolean {
         return isFinished() && !isWinner(Mark.X) && !isWinner(Mark.O)
     }
 
-    fun isWinner(mark: Mark): Boolean {
+    private fun isWinner(mark: Mark): Boolean {
         for (row in board.allThreeInARowCombinations()) {
             if (row.areAllEqual(mark)) {
                 return true
@@ -59,12 +54,12 @@ class TicTakToe {
         return false
     }
 
-    fun isImpossible(): Boolean {
+    private fun isImpossible(): Boolean {
         return isWinner(Mark.X) && isWinner(Mark.O)
                 || abs(noOf(Mark.X) - noOf(Mark.O)) > 1
     }
 
     private fun noOf(mark: Mark): Int {
-        return board.cells.count { it.mark.equals(mark) }
+        return board.cells.count { it.mark == mark }
     }
 }
